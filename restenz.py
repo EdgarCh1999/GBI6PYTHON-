@@ -35,6 +35,18 @@ def enzima(seq, site):
     return(fragments)
 
 
+# Secuencia de prueba
+seq = "CGATGATGAATTCGTACCCGAGCTGAATTCAGCAGAATTCAGCTGATCGATACCAGAATTCCATA"
 
+# Sitio de empalme de la enzima EcoR1
+EcoR1 = "GAATTC"
+HindIII =  "AAGCTT"
+NotI =  "GCGGCCGC"
+
+# Prueba con el sitio de empalme de la enzima EcoR1
+
+print(enzima(seq, EcoR1))
+print(enzima(seq, HindIII))
+print(enzima(seq, NotI))
 
 
